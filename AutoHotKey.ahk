@@ -55,4 +55,11 @@ return
     search_string := StrReplace(Clipboard, A_Space, "+")
     RunWait, %Browser% https://en.wikipedia.org?search=%search_string%
 return
+
+^m:: ; Open Google map 
+    Send, ^c
+    Sleep, 250
+    RunWait, %Browser% https://www.google.com/maps
+return
+
 ;/////////////////////////////////////////////////
