@@ -33,6 +33,14 @@ return
     }
 return
 
+^t:: ; Time stamp for Bart
+    FormatTime, time, A_now, dd/MM/yyyy HH:mm
+    send %time%
+    send, {Space}
+    send, (NG)  ; need to be change to match your initial
+return
+
+
 ;////////////////////////////////////////////////////
 ;/////////////   Internet shortcut  /////////////////
 
